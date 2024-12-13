@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: iran;
+    src: url("../font/Vazir.ttf") format("opentype");
+}
+
+@keyframes anime1 {
+    0%{opacity: 1;}
+    29%{opacity: 1;}
+    35%{opacity: 0;}
+    35.00000001%{opacity: 0;}
+    94%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes anime2 {
+    0%{opacity: 0;}
+    29%{opacity: 0;}
+    35%{opacity: 1;}
+    64%{opacity: 1;}
+    68%{opacity: 0;}
+    68.00000001%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes anime3 {
+    0%{opacity: 0;}
+    64%{opacity: 0;}
+    68%{opacity: 1;}
+    94%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@layer components{
+    .row{
+        @apply flex flex-wrap w-full ;
+    }
+    .center{
+        @apply justify-center items-center;
+    }
+}
